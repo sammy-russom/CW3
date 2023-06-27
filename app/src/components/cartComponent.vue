@@ -59,7 +59,16 @@ export default {
         this.$emit("submit-cart")
     }
   },
-  
+  data(){
+      return {
+        cart_array:this.cart,
+      userData:{
+          name:"",
+          phone:"",
+      }
+      }
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
