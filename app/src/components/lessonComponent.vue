@@ -141,13 +141,7 @@
             this.order = order
         }
     },
-    data(){
-        return{
-        criteria:"lesson",
-        order:"ascending",
-        searchInput:"",
-        }
-    }
+    
   }
   </script>
   
