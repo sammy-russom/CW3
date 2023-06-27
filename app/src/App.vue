@@ -100,7 +100,7 @@ export default {
     HandleSubmitCart(){
       alert("Cart submitted")
       this.cart = []
-      this.cycle()
+      
     },
     loadSubjects(){
       fetch(`http://localhost:3000/collection/subjects`).then((res)=>{
