@@ -198,13 +198,7 @@ header button{
     width: 100%;
     object-fit: cover;
 }
-.subject *{
-    margin: 0.25rem 0;
-}
-#Checkout{
-    width: 30%;
-    align-items: center;
-}
+
 
 .input_container{
   margin: 0.5rem 0;
