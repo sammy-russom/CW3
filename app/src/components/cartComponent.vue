@@ -43,7 +43,14 @@ export default {
   props: {
     cart: Array
   },
-  
+  computed: {
+    canCheckout(){
+        if(this.userData.phone.match(/^[0-9]+$/) != null & this.userData.name.match(/^[A-Za-z]+$/) != null){
+            return true
+        }
+        return false
+    },
+  },
   methods:{
     removeFromCart(subject){
             this.$emit("remove-cart",JSON.stringify(subject))
