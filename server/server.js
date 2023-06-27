@@ -14,9 +14,7 @@ const ObjectId = require('mongodb').ObjectID;
 const uri = "mongodb+srv://sammyrussom:Adonay56@cluster0.zcb8g9h.mongodb.net/";
 
 let db;
-client.connect(uri,(err,cli)=>{
-    db = cli.db('CW3');
-});
+
 
 app.use(cors())
 app.use(express.json());
