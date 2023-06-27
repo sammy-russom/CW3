@@ -121,7 +121,26 @@
             return this.subjects
         }
     },
-    
+    methods:{
+        addToCart(subject){
+            this.$emit("add-cart",JSON.stringify(subject))
+        },
+        removeFromCart(cart_item){
+            this.$emit("remove-cart",JSON.stringify(cart_item))
+        },
+        submit_cart(){
+            alert("Submitted cart")
+        },
+        checkout(){
+            this.showSubjects = this.showSubjects ? false : true
+        },
+        changeCriteria(criteria){
+            this.criteria = criteria
+        },
+        changeOrder(order){
+            this.order = order
+        }
+    },
     data(){
         return{
         criteria:"lesson",
