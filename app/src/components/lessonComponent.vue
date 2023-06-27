@@ -63,11 +63,7 @@
 </template>
   
   <script>
-  export default {
-    name: 'LessonComponent',
-    props: {
-        subjects: Array
-    },
+  
     computed:{
         filterItems(){
             if (this.criteria != "all" & this.criteria != "availability" & this.criteria != "price") {
